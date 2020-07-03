@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+:root {
+    --mainDark: #424242;
+    --mainGrey: rgb(109, 109, 109);
+    --mainLightGrey: rgb(172, 172, 172);
+    --mainWhite: #efefef;
+    --mainBlue: #007bff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+    /*display: none;*/
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-toggler:focus {
+    outline: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar-toggler {
+    border: none;
 }
 
-.App-link {
-  color: #61dafb;
+.container-fluid {
+    max-width: 90%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-content {
+    min-height: 59vh;
+}
+
+@media (max-width: 700px) {
+    .container-fluid {
+        max-width: 95%;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #efefef;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #efefef;
+}
+
+.nav-link {
+    color: #efefef !important;
+    text-transform: uppercase;
+    font-size: 12px;
 }
