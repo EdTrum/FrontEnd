@@ -62,17 +62,17 @@ export default CustomFooter
 
 const Styles = styled.footer`
     .footer-middle {
-        background: var(--mainDark);
+        background-color:#d3d3d3;
         padding-top: 3rem;
         text-align: center;
-        color: var(--mainWhite);
+        color: black;
     }
     .footer-bottom {
         padding-top: 3rem;
         padding-bottom: 2rem;
     }
     ul li a {
-        color: var(--mainGrey)
+        color: black;
     }
     ul li a:hover {
         color: var(--mainLightGrey)

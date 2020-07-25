@@ -2,7 +2,7 @@ import React from 'react'
 import Jumbotron from "../layouts/Jumbotron"
 import Layout from "../layouts/Layout"
 import courses from '../../assets/mocks/courses'
-import dummyImg from "../../assets/dummy.png"
+import dummyImg from "../../assets/slide1.jpg"
 import {Card} from "react-bootstrap"
 import {Link} from "react-router-dom"
 

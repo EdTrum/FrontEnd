@@ -10,10 +10,9 @@ function Jumbotron() {
                 <div className="overlay">
                     <div className="container">
                         <h3>Welcome to EdTrum</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis earum facilis, illo
-                            obcaecati optio perspiciatis quo quod rem tempora voluptatibus.
-                        </p>
+                        <h1>
+                            We Provide Solutions To Your Learning!
+                        </h1>
                     </div>
                 </div>
             </Jumbo>
@@ -28,7 +27,7 @@ const Styles = styled.div`
         background: url(${backgroundImg}) no-repeat fixed bottom;
         background-size: cover;
         color: #efefef;
-        height: 150px;
+        height: 250px;
         position: relative;
         z-index -2;
     }
