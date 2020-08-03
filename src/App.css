@@ -1,51 +1,68 @@
 :root {
-    --mainDark: #424242;
-    --mainGrey: rgb(109, 109, 109);
-    --mainLightGrey: rgb(172, 172, 172);
-    --mainWhite: #efefef;
-    --mainBlue: #007bff;
+  --mainDark: #424242;
+  --mainGrey: rgb(109, 109, 109);
+  --mainLightGrey: rgb(172, 172, 172);
+  --mainWhite: #efefef;
+  --mainBlue: #007bff;
 }
 
 ::-webkit-scrollbar {
-    width: 0;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
-    /*display: none;*/
+  width: 10px; /* Remove scrollbar space */
+  background: white; /* Optional: just make scrollbar invisible */
+  /*display: none;*/
+}
+
+::-webkit-scrollbar-thumb {
+  background: lightgray;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: grey;
 }
 
 .navbar-toggler:focus {
-    outline: none;
+  outline: none;
 }
 
 .navbar-toggler {
-    border: none;
+  border: none;
 }
 
 .container-fluid {
-    max-width: 90%;
+  max-width: 100%;
+}
+
+.container-bg {
+  max-width: 90%;
+  text-align: center;
 }
 
 .main-content {
-    min-height: 59vh;
+  min-height: 59vh;
 }
 
 @media (max-width: 700px) {
-    .container-fluid {
-        max-width: 95%;
-    }
+  .container-fluid {
+    max-width: 95%;
+  }
+
+  .courses-body {
+    max-width: 80%;
+  }
 }
 
 a {
-    text-decoration: none;
-    color: #efefef;
+  text-decoration: none;
+  color: #efefef;
 }
 
 a:hover {
-    text-decoration: none;
-    color: #efefef;
+  text-decoration: none;
+  color: #efefef;
 }
 
 .nav-link {
-    color: #efefef !important;
-    text-transform: uppercase;
-    font-size: 12px;
+  color: #efefef;
+  text-transform: uppercase;
+  font-size: 12px;
 }
