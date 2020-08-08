@@ -5,6 +5,9 @@ import backImg from "../../assets/pics/intro-bg.png";
 import styled from "styled-components";
 import { Nav, NavDropdown } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
+import Login from "../login/login"
+
+
 
 function LandHeader() {
   const [expanded, setExpanded] = useState("false");
@@ -97,13 +100,14 @@ function LandHeader() {
                 </Link>
                 <Link
                   // onClick={() => setExpanded(false)}
-                  to='/'
+                  to='/login'
                   className='btn btn-primary active'
                   role='button'
                   aria-pressed='true'
                 >
                   Log In
                 </Link>
+              
               </form>
             </div>
           </Nav>

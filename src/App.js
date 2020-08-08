@@ -10,24 +10,17 @@ import CustomNavbar from "./components/layouts/CustomNavbar";
 import CustomFooter from "./components/layouts/CustomFooter";
 import Course from "./components/course/Course";
 import LandingPage from "./components/pages/LandingPage";
+import { Login } from "./components/login/login"
+import { Link } from "react-router-dom"
+
+
+
 
 function App() {
   return (
     <Router>
       <LandingPage />
-      {/* <CustomNavbar />
-      <div className='main-content'>
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route path='/my-courses' component={MyCourses} />
-          <Route path='/contact' component={Contact} />
-          <Route exact path='/course/:title' component={Course} />
-          <Route component={NotFoundPage} /> */}
-      {/* <Route path='/landing-page' component={LandingPage} /> */}
-      {/* </Switch>
-        <br />
-      </div>
-      <CustomFooter /> */}
+    
     </Router>
   );
 }
