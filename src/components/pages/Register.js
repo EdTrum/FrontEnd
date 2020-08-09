@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import loginImg from "../../assets/pics/login.svg";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { FaGoogle, FaFacebookSquare } from "react-icons/fa";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -10,86 +11,77 @@ function Login() {
   const handleClick = () => <Link to='/home' />;
 
   return (
-    // <div className='text-center bg-dark'>
-    //   <div className='container'>
-    //     <div className='row justify-content-center' style={{ height: "100vh" }}>
-    //       <div className='col-sm-5'>
-    //         <div className='card login-card'>
-    //           <div className='card-body'>
-    //             <h3 className='text-bold'>Sign In</h3>
-    //             <br />
-    //             <form>
-    //               <label htmlFor='Email'>EMAIL</label>
-    //               <input
-    //                 type='email'
-    //                 className='form-control'
-    //                 placeholder='Email'
-    //                 name='email'
-    //                 value={email}
-    //                 onChange={(e) => setEmail(e.target.value)}
-    //               />
-    //               <br />
-    //               <label htmlFor='Email'>PASSWORD</label>
-    //               <input
-    //                 type='password'
-    //                 className='form-control'
-    //                 placeholder='Password'
-    //                 value={password}
-    //                 name='password'
-    //                 onChange={(e) => setPassword(e.target.value)}
-    //               />
-    //               <br />
-    //               <button
-    //                 type='submit'
-    //                 className='btn btn-success form-control'
-    //                 onClick={handleClick}
-    //               >
-    //                 Log in
-    //               </button>
-    //             </form>
-    //           </div>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
     <Styles>
       <div className='base-container'>
         <div className='header'>Sign Up and Start Learning!</div>
+        <hr
+          className='teal accent-3 mb-4 mt-0 d-inline-block mx-auto'
+          style={{ width: "300px" }}
+        />
         <div className='content'>
           <div className='image'>
             <img src={loginImg} />
           </div>
           <form className='form'>
-            <label htmlFor='Full Name'>Full Name</label>
-            <input type='text' name='Full Name' placeholder='Full Name' />
+            <input
+              type='text'
+              name='Full Name'
+              placeholder='Full Name'
+              className='form-control'
+            />
             <br />
-            <label htmlFor='Email Address'>Email Address</label>
             <input
               type='email'
               name='Email Address'
               placeholder='Email Address'
+              className='form-control'
             />
             <br />
-            <label htmlFor='Password'>Password</label>
-            <input type='password' name='Password' placeholder='Password' />
+            <input
+              type='password'
+              name='Password'
+              placeholder='Password'
+              className='form-control'
+            />
             <br />
-            <label htmlFor='Confrim Password'>Confrim Password</label>
             <input
               type='password'
               name='Confrim Password'
               placeholder='Confrim Password'
+              className='form-control'
             />
             <br />
             <button type='submit' className='btn btn-success form-control'>
-              Login
+              Sign Up
             </button>
+            <span className='p-3 text-muted text-sm'>or</span>
+            <button
+              type='submit'
+              className='btn btn-default border-dark form-control'
+            >
+              <FaGoogle
+                style={{ color: "rgb(66,133,244)", fontSize: "15px" }}
+              />{" "}
+              Signup with Google
+            </button>
+            <br />
+            <button
+              type='submit'
+              className='btn btn-default border-dark form-control'
+            >
+              <FaFacebookSquare
+                style={{ color: "rgb(66,103,178)", fontSize: "20px" }}
+              />{" "}
+              Signup with Facebook
+            </button>
+            <br />
+            <p>
+              Have an account?{" "}
+              <Link to='/login' style={{ color: "blue" }}>
+                Login
+              </Link>{" "}
+            </p>
           </form>
-        </div>
-        <div className='footer'>
-          <button type='button' className='btn'>
-            Sign Up
-          </button>
         </div>
       </div>
     </Styles>
@@ -108,7 +100,7 @@ const Styles = styled.div`
 
     .header {
       font-size: 24px;
-      font-family: sans-serif, "Open Sans";
+      padding: 10px;
     }
 
     .content {
