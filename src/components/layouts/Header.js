@@ -3,6 +3,7 @@ import imgOne from "../../assets/pics/logo.png";
 import imgTwo from "../../assets/pics/slide1.jpg";
 import backImg from "../../assets/pics/intro-bg.png";
 import styled from "styled-components";
+import Home from "../pages/Home";
 import { Nav, NavDropdown } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
 
@@ -97,7 +98,8 @@ function LandHeader() {
                 </Link>
                 <Link
                   // onClick={() => setExpanded(false)}
-                  to='/'
+                  to='/home'
+                  // component={Home}
                   className='btn btn-primary active'
                   role='button'
                   aria-pressed='true'
