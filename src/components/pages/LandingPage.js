@@ -4,6 +4,8 @@ import Footer from "../layouts/Footer";
 import Body from "../layouts/Body";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "../pages/Home";
+import Login from "./Login";
+import Register from "./Register";
 
 function LandingPage() {
   return (
@@ -12,8 +14,8 @@ function LandingPage() {
         <Header />
         <Switch>
           <Route exact path='/' />
-          <Route exact path='/register' component={Home} />
-          <Route exact path='/home' component={Home} />
+          <Route exact path='/register' component={Register} />
+          <Route exact path='/login' component={Login} />
         </Switch>
       </Router>
       <Body />

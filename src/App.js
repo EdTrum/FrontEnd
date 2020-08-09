@@ -10,13 +10,11 @@ import CustomNavbar from "./components/layouts/CustomNavbar";
 import CustomFooter from "./components/layouts/CustomFooter";
 import Course from "./components/course/Course";
 import LandingPage from "./components/pages/LandingPage";
-import Login from "./components/pages/Login";
-import Register from "./components/pages/Register";
 
 function App() {
   return (
     <Router>
-      <Register />
+      <LandingPage />
       {/* <CustomNavbar />
       <div className='main-content'>
         <Switch>

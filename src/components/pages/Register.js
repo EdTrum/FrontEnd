@@ -62,7 +62,7 @@ function Login() {
               <FaGoogle
                 style={{ color: "rgb(66,133,244)", fontSize: "15px" }}
               />{" "}
-              Signup with Google
+              Sign Up with Google
             </button>
             <br />
             <button
@@ -72,7 +72,7 @@ function Login() {
               <FaFacebookSquare
                 style={{ color: "rgb(66,103,178)", fontSize: "20px" }}
               />{" "}
-              Signup with Facebook
+              Sign Up with Facebook
             </button>
             <br />
             <p>
