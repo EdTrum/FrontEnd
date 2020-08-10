@@ -118,6 +118,7 @@ const Styles = styled.div`
 
       .form {
         margin-top: 2em;
+        margin-bottom: 1.5em;
         display: flex;
         flex-direction: column;
         align-items: center;
