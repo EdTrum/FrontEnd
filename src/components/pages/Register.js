@@ -101,6 +101,7 @@ const Styles = styled.div`
     .header {
       font-size: 24px;
       padding: 10px;
+      margin-top: 60px;
     }
 
     .content {

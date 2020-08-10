@@ -13,12 +13,11 @@ function LandingPage() {
       <Router>
         <Header />
         <Switch>
-          <Route exact path='/' />
+          <Route exact path='/' component={Body} />
           <Route exact path='/register' component={Register} />
           <Route exact path='/login' component={Login} />
         </Switch>
       </Router>
-      <Body />
       <Footer />
     </div>
   );
