@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import imgOne from "../../assets/pics/logo.png";
-import Home from "../pages/Home";
 import { Nav, NavDropdown } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
 
