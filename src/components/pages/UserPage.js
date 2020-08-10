@@ -13,7 +13,6 @@ import Course from "../course/Course";
 function UserPage() {
   return (
     <Router>
-      <CustomNavbar />
       <div className='main-content' style={{ minHeight: "59vh" }}>
         <Switch>
           <Route exact path='/userpage' component={Home} />
@@ -25,7 +24,6 @@ function UserPage() {
         </Switch>
         <br />
       </div>
-      <CustomFooter />
     </Router>
   );
 }
