@@ -1,9 +1,12 @@
 import React from "react";
 import { Button, Container } from "react-bootstrap";
+import CustomNavbar from "../layouts/CustomNavbar";
+import CustomFooter from "../layouts/CustomFooter";
 
 function Contact() {
   return (
     <Container>
+      <CustomNavbar />
       <div className='row pt-5'>
         <div className='col-sm-6'>
           <h4>Lorem ipsum dolor.</h4>
@@ -55,6 +58,7 @@ function Contact() {
           </form>
         </div>
       </div>
+      <CustomFooter />
     </Container>
   );
 }

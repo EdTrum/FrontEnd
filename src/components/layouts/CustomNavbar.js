@@ -29,6 +29,12 @@ function CustomNavbar() {
                   Contact Us
                 </NavLink>
               </Nav.Item>
+              <Nav.Item>
+                <NavLink className='nav-link' to='/'>
+                  Sign Out
+                  {/* <Route component={} /> */}
+                </NavLink>
+              </Nav.Item>
             </Nav>
           </Navbar.Collapse>
         </div>
