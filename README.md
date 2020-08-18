@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
+Here's a walkthrough of the frontend (still in development):
 
 <img src='frontend-min.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
